@@ -1,0 +1,3 @@
+dockerfile.nginx
+.env
+nginx.conf
