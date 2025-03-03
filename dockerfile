@@ -12,12 +12,6 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite for clean URLs
 RUN a2enmod rewrite
 
-# Set environment variables for the database connection (can be overridden at runtime)
-ENV DB_HOST=db_host
-ENV DB_USER=db_user
-ENV DB_PASSWORD=db_password
-ENV DB_NAME=todo_db
-
 # Set the ServerName to avoid warnings
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
